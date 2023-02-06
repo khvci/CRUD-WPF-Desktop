@@ -5,12 +5,12 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfProject2"
         mc:Ignorable="d"
-        Title="LoginWindow" Height="250" Width="400">
+        Title="Employee Login" Height="250" Width="400">
     <Grid>
         <Label Content="Name" HorizontalAlignment="Left" Margin="46,53,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.527,1.208"/>
         <Label Content="ID" HorizontalAlignment="Left" Margin="66,97,0,0" VerticalAlignment="Top" RenderTransformOrigin="-1.846,-1.265"/>
         <TextBox Name="txtName" HorizontalAlignment="Left" Height="26" Margin="111,53,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="212"/>
-        <TextBox Name="txtCustomerId" HorizontalAlignment="Left" Height="26" Margin="111,97,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="212"/>
+        <TextBox Name="txtEmployeeId" HorizontalAlignment="Left" Height="26" Margin="111,97,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="212"/>
         <Button Content="Login" HorizontalAlignment="Left" Margin="111,161,0,0" VerticalAlignment="Top" Width="138" Height="35" Click="Button_Click"/>
 
     </Grid>

@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.SqlClient;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -23,6 +25,22 @@ namespace WpfProject2
         public MainWindow()
         {
             InitializeComponent();
+        }
+
+        private void btnGetAll_Click(object sender, RoutedEventArgs e)
+        {
+            using (SqlConnection connection = new SqlConnection(@"Data Source=(local);Initial Catalog=Northwind;Integrated Security=True"))
+            {
+                connection.Open();
+
+                using (SqlCommand command = new SqlCommand("SELECT * FROM Customers", connection))
+                {
+                    SqlDataAdapter dataAdapter = new SqlDataAdapter(command);
+                    DataTable dataTable = new DataTable();
+                    dataAdapter.Fill(dataTable);
+                    DataGrid.ItemsSource = dataTable.DefaultView;
+                }
+            }
         }
     }
 }

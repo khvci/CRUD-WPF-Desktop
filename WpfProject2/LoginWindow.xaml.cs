@@ -17,7 +17,7 @@ namespace WpfProject2
         {
 
             string name = txtName.Text;
-            string employeeId = txtCustomerId.Text;
+            string employeeId = txtEmployeeId.Text;
 
             using (SqlConnection connection = new SqlConnection(@"Data Source=(local);Initial Catalog=Northwind;Integrated Security=True"))
             {
@@ -33,7 +33,8 @@ namespace WpfProject2
                     if (count > 0)
                     {
                         MainWindow mainWindow = new MainWindow();
-                        mainWindow.Show();
+                        //mainWindow.Show();
+                        mainWindow.ShowDialog();
                     }
                     else
                     {

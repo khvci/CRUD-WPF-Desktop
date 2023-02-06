@@ -5,8 +5,15 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfProject2"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="Customer Management System" Height="450" Width="813">
     <Grid>
+
+        <StackPanel HorizontalAlignment="Left" Height="414" Margin="10,0,0,0" VerticalAlignment="Center" Width="649" Grid.ColumnSpan="2">
+            <DataGrid Name="DataGrid" Height="415" d:ItemsSource="{d:SampleData ItemCount=5}" Width="645"/>
+        </StackPanel>
+        <Button Content="Get All Customers" Name="btnGetAll" HorizontalAlignment="Left" Margin="664,10,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.056,3.458" Height="30" Width="126" Click="btnGetAll_Click"/>
+        <Button Content="Add Customer" Name="btnAddCustomer" HorizontalAlignment="Left" Margin="664,45,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.504,2.643" Height="30" Width="126"/>
+        <Button Content="Remove Customer" Name="btnRemoveCustomer" HorizontalAlignment="Left" Margin="664,80,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.504,2.643" Height="30" Width="126"/>
 
     </Grid>
 </Window>
