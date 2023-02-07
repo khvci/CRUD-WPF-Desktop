@@ -15,7 +15,11 @@ namespace WpfProject2
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
+            Login();
+        }
 
+        private void Login()
+        {
             string name = txtName.Text;
             string employeeId = txtEmployeeId.Text;
 
@@ -42,7 +46,6 @@ namespace WpfProject2
                     }
                 }
             }
-            
         }
     }
 }
