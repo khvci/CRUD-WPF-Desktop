@@ -22,19 +22,9 @@ namespace WpfProject2
 
         private void btnAddCustomer_Click(object sender, RoutedEventArgs e)
         {
-            //AddCustomer addCustomer = new AddCustomer();
-            try
-            {
-                //addCustomer.MainWindowInstance = this;
-                //addCustomer.Owner = this;
-                //addCustomer.ShowDialog();
-                UserDetails userDetails = new UserDetails();
-                userDetails.ShowDialog();
-            }
-            catch (System.Exception ex)
-            {
-                MessageBox.Show("show dialog hatasi: " + ex.Message);
-            }
+
+            UserDetails userDetails = new UserDetails();
+            userDetails.ShowDialog();
         }
 
         private void btnRemoveCustomer_Click(object sender, RoutedEventArgs e)

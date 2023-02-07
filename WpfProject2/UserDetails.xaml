@@ -5,6 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfProject2"
         mc:Ignorable="d"
+        WindowStartupLocation="CenterScreen"
         Title="UserDetails" Height="450" Width="420">
     <Grid>
         <Label Content="Customer ID" HorizontalAlignment="Left" Margin="16,18,0,0" VerticalAlignment="Top"/>
