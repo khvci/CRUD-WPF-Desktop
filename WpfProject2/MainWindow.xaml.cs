@@ -1,19 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Data;
 using System.Data.SqlClient;
-using System.Data;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
+using System.Windows;
 
 namespace WpfProject2
 {
@@ -29,7 +18,30 @@ namespace WpfProject2
 
         private void btnGetAll_Click(object sender, RoutedEventArgs e)
         {
-            using (SqlConnection connection = new SqlConnection(@"Data Source=(local);Initial Catalog=Northwind;Integrated Security=True"))
+            GetCustomers();
+        }
+
+        private void btnAddCustomer_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void btnRemoveCustomer_Click(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                RemoveCustomer();
+            }
+            catch (System.Exception ex)
+            {
+                MessageBox.Show("This customer has an order, so cannot be deleted.");
+            }
+        }
+
+        
+        private void GetCustomers()
+        {
+            using (SqlConnection connection = new SqlConnection(Connection.connectionString))
             {
                 connection.Open();
 
@@ -42,5 +54,37 @@ namespace WpfProject2
                 }
             }
         }
+
+        private void RemoveCustomer()
+        {
+            if (DataGrid.SelectedItem == null)
+            {
+                MessageBox.Show("Please select a customer to remove.");
+                //return;
+            }
+
+            DataRowView row = (DataRowView)DataGrid.SelectedItem;
+            string customerID = row["CustomerID"].ToString();
+
+            using (SqlConnection connection = new SqlConnection(Connection.connectionString))
+            {
+                connection.Open();
+                SqlCommand cmd = new SqlCommand("DELETE FROM Customers WHERE CustomerID = @id", connection);
+                cmd.Parameters.AddWithValue("@id", customerID);
+
+                int rowsAffected = cmd.ExecuteNonQuery();
+                if (rowsAffected > 0)
+                {
+                    GetCustomers();
+                    MessageBox.Show("Customer removed successfully.");
+                }
+                else
+                {
+                    MessageBox.Show("Failed to remove customer.");
+                }
+            }
+        }
+
+        
     }
 }

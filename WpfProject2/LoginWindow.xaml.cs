@@ -19,7 +19,7 @@ namespace WpfProject2
             string name = txtName.Text;
             string employeeId = txtEmployeeId.Text;
 
-            using (SqlConnection connection = new SqlConnection(@"Data Source=(local);Initial Catalog=Northwind;Integrated Security=True"))
+            using (SqlConnection connection = new SqlConnection(Connection.connectionString))
             {
                 connection.Open();
 
