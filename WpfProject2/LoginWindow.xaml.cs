@@ -1,4 +1,5 @@
-﻿using System.Data.SqlClient;
+﻿
+using System.Data.SqlClient;
 using System.Windows;
 
 namespace WpfProject2
@@ -37,7 +38,6 @@ namespace WpfProject2
                     if (count > 0)
                     {
                         MainWindow mainWindow = new MainWindow();
-                        //mainWindow.Show();
                         mainWindow.ShowDialog();
                     }
                     else

@@ -2,7 +2,6 @@
 using System.Data.SqlClient;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows;
 
 namespace WpfProject2
 {
@@ -23,7 +22,19 @@ namespace WpfProject2
 
         private void btnAddCustomer_Click(object sender, RoutedEventArgs e)
         {
-
+            //AddCustomer addCustomer = new AddCustomer();
+            try
+            {
+                //addCustomer.MainWindowInstance = this;
+                //addCustomer.Owner = this;
+                //addCustomer.ShowDialog();
+                UserDetails userDetails = new UserDetails();
+                userDetails.ShowDialog();
+            }
+            catch (System.Exception ex)
+            {
+                MessageBox.Show("show dialog hatasi: " + ex.Message);
+            }
         }
 
         private void btnRemoveCustomer_Click(object sender, RoutedEventArgs e)
@@ -60,7 +71,6 @@ namespace WpfProject2
             if (DataGrid.SelectedItem == null)
             {
                 MessageBox.Show("Please select a customer to remove.");
-                //return;
             }
 
             DataRowView row = (DataRowView)DataGrid.SelectedItem;
@@ -84,7 +94,5 @@ namespace WpfProject2
                 }
             }
         }
-
-        
     }
 }
