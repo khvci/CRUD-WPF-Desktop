@@ -15,6 +15,6 @@
         <Button Content="Get All Customers" Name="btnGetAll" HorizontalAlignment="Left" Margin="664,10,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.056,3.458" Height="30" Width="126" Click="btnGetAll_Click"/>
         <Button Content="Add Customer" Name="btnAddCustomer" HorizontalAlignment="Left" Margin="664,45,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.504,2.643" Height="30" Width="126" Click="btnAddCustomer_Click"/>
         <Button Content="Remove Customer" Name="btnRemoveCustomer" HorizontalAlignment="Left" Margin="664,80,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.504,2.643" Height="30" Width="126" Click="btnRemoveCustomer_Click"/>
-
+        <Button Content="Update Customer" Name="btnUpdateCustomer" HorizontalAlignment="Left" Margin="664,115,0,0" VerticalAlignment="Top" Height="30" Width="126" Click="btnUpdateCustomer_Click"/>
     </Grid>
 </Window>

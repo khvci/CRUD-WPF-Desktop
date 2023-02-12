@@ -8,11 +8,11 @@
         WindowStartupLocation="CenterScreen"
         Title="Employee Login" Height="250" Width="400">
     <Grid>
-        <Label Content="Name" HorizontalAlignment="Left" Margin="46,53,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.527,1.208"/>
-        <Label Content="ID" HorizontalAlignment="Left" Margin="66,97,0,0" VerticalAlignment="Top" RenderTransformOrigin="-1.846,-1.265"/>
-        <TextBox Name="txtName" HorizontalAlignment="Left" Height="26" Margin="111,53,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="212"/>
-        <TextBox Name="txtEmployeeId" HorizontalAlignment="Left" Height="26" Margin="111,97,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="212"/>
-        <Button Content="Login" HorizontalAlignment="Left" Margin="111,161,0,0" VerticalAlignment="Top" Width="138" Height="35" Click="Button_Click"/>
+        <Label Content="Name" HorizontalAlignment="Left" Margin="35,53,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.527,1.208"/>
+        <Label Content="ID" HorizontalAlignment="Left" Margin="55,99,0,0" VerticalAlignment="Top" RenderTransformOrigin="-1.846,-1.265"/>
+        <TextBox Name="txtName" HorizontalAlignment="Center" Height="26" Margin="0,53,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="212"/>
+        <TextBox Name="txtEmployeeId" HorizontalAlignment="Center" Height="26" Margin="0,97,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="212"/>
+        <Button Content="Login" HorizontalAlignment="Center" Margin="0,159,0,0" VerticalAlignment="Top" Width="138" Height="35" Click="Button_Click"/>
 
     </Grid>
 </Window>
