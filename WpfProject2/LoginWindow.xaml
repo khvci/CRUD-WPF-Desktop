@@ -13,6 +13,5 @@
         <TextBox Name="txtName" HorizontalAlignment="Center" Height="26" Margin="0,53,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="212"/>
         <TextBox Name="txtEmployeeId" HorizontalAlignment="Center" Height="26" Margin="0,97,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="212"/>
         <Button Content="Login" HorizontalAlignment="Center" Margin="0,159,0,0" VerticalAlignment="Top" Width="138" Height="35" Click="Button_Click"/>
-
     </Grid>
 </Window>
