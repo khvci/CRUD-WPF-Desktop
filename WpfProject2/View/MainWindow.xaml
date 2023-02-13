@@ -10,7 +10,7 @@
     <Grid Margin="0,0,0,0">
 
         <StackPanel HorizontalAlignment="Left" Height="414" Margin="10,0,0,0" VerticalAlignment="Center" Width="649" Grid.ColumnSpan="2">
-            <DataGrid AlternationCount="2" AlternatingRowBackground="LightSalmon" Name="DataGrid" Height="415" d:ItemsSource="{d:SampleData ItemCount=5}" Width="645"/>
+            <DataGrid AlternationCount="2" AlternatingRowBackground="LightSalmon" Name="DataGrid" Height="412" d:ItemsSource="{d:SampleData ItemCount=5}" Width="645"/>
         </StackPanel>
         <Button Content="Get All Customers" Name="btnGetAll" HorizontalAlignment="Left" Margin="664,10,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.056,3.458" Height="30" Width="126" Click="btnGetAll_Click"/>
         <Button Content="Add Customer" Name="btnAddCustomer" HorizontalAlignment="Left" Margin="664,45,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.504,2.643" Height="30" Width="126" Click="btnAddCustomer_Click"/>
