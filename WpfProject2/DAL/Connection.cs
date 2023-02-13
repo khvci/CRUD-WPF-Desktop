@@ -1,4 +1,4 @@
-﻿namespace WpfProject2
+﻿namespace WpfProject2.DAL
 {
     public static class Connection
     {

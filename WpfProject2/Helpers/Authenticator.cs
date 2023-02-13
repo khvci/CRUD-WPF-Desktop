@@ -1,5 +1,6 @@
 ﻿using System.Data.SqlClient;
 using System.Windows;
+using WpfProject2.DAL;
 
 namespace WpfProject2.Helpers
 {

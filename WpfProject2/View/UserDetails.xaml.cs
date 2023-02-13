@@ -1,5 +1,4 @@
-﻿using System.Data.SqlClient;
-using System.Windows;
+﻿using System.Windows;
 
 namespace WpfProject2
 {
@@ -30,7 +29,5 @@ namespace WpfProject2
             DAL.CustomerManager.AddCustomerToDB(customer);
             this.Close();
         }
-
-        
     }
 }

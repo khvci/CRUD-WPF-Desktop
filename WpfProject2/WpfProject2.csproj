@@ -5,11 +5,11 @@
     <TargetFramework>net7.0-windows</TargetFramework>
     <Nullable>enable</Nullable>
     <UseWPF>true</UseWPF>
-    <ApplicationIcon>atm.ico</ApplicationIcon>
+    <ApplicationIcon>Resources\atm.ico</ApplicationIcon>
   </PropertyGroup>
 
   <ItemGroup>
-    <Content Include="atm.ico" />
+    <Content Include="Resources\atm.ico" />
   </ItemGroup>
 
   <ItemGroup>

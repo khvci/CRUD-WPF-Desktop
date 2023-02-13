@@ -1,6 +1,4 @@
-﻿using System.Windows.Documents;
-
-namespace WpfProject2
+﻿namespace WpfProject2
 {
     public class Customer
     {

@@ -1,6 +1,4 @@
-﻿
-using System.Data.SqlClient;
-using System.Windows;
+﻿using System.Windows;
 
 namespace WpfProject2
 {
