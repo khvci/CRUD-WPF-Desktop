@@ -11,7 +11,14 @@ namespace WpfProject2
 
         private void btnAddCustomer_Click(object sender, RoutedEventArgs e)
         {
-            Customer customer = new Customer() 
+            Customer customer = CreateCustomer();
+            DAL.CustomerManager.AddCustomerToDB(customer);
+            this.Close();
+        }
+
+        private Customer CreateCustomer()
+        {
+            return new Customer()
             {
                 CustomerID = txtCustomerID.Text,
                 CompanyName = txtCompanyName.Text,
@@ -25,9 +32,6 @@ namespace WpfProject2
                 Phone = txtPhone.Text,
                 Fax = txtFax.Text,
             };
-
-            DAL.CustomerManager.AddCustomerToDB(customer);
-            this.Close();
         }
     }
 }

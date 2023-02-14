@@ -1,8 +1,7 @@
-﻿using System.Data.SqlClient;
-using System.Data;
+﻿using System.Data;
+using System.Data.SqlClient;
 using System.Windows;
 using System.Windows.Controls;
-using System;
 
 namespace WpfProject2.DAL
 {
@@ -85,7 +84,7 @@ namespace WpfProject2.DAL
             }
         }
 
-        internal static void AddCustomer(DataGrid grid)
+        public static void AddCustomer(DataGrid grid)
         {
             UserDetails userDetails = new UserDetails();
             userDetails.ShowDialog();
